@@ -7,7 +7,6 @@
 #╰━━━┻╯╱╱╰━━┻━━━╯╱╰╯╱╰━━┻╯╱╰┻━━━┻━━━╯
 
 import pyautogui
-from termcolor import colored
 
 while True:
 	pyautogui.click(x=918, y=203, clicks=1)
