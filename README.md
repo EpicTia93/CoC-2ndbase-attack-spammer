@@ -1,5 +1,5 @@
 # CoC-2ndbase-attack-spammer
-This very simple script spams witch attacks on the 2nd base to farm gold and elixir.
+This very simple python script spams witch attacks on the 2nd base to farm gold and elixir.
 
 **Installation**
 This script works using the _pyautogui_ module to handle clicks in different positions of the screen.
