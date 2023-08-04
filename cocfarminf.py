@@ -1,4 +1,3 @@
-# WITCHES ATTACKS SPAMMER written by:
 # ━━┳━━━┳━━┳━━━┳━━━━┳━━┳━━━┳━━━┳━━━╮
 #┃╭━━┫╭━╮┣┫┣┫╭━╮┃╭╮╭╮┣┫┣┫╭━╮┃╭━╮┃╭━╮┃
 #┃╰━━┫╰━╯┃┃┃┃┃╱╰┻╯┃┃╰╯┃┃┃┃╱┃┃╰━╯┣╯╭╯┃
@@ -8,7 +7,11 @@
 
 import pyautogui
 
+counter = 0
+
 while True:
+	counter += 1 
+
 # Selecting Bluestacks window
 	pyautogui.click(x=918, y=203, clicks=1)
 	print("Opening Bluestacks window")
@@ -75,10 +78,23 @@ while True:
 	pyautogui.sleep(101)
 	print("First attack is finished!")
 
+
 # Try to place troops in 2nd attack too in case of 100%
+	def troops_placement_second():
+		pyautogui.click(x=1017, y=805, clicks=1)
+		print("Selecting witches")
+		pyautogui.sleep(1)
+		pyautogui.click(x=461, y=500, clicks=7, interval=0.2)
+		print("Placing witches")
+		pyautogui.click(x=187, y=831, clicks=1)
+		print("Selecting war machine")
+		pyautogui.sleep(0.75)
+		pyautogui.click(x=461, y=500, clicks=1)
+		print("Placing war machine")
+
 	def second_attack():
 		print("Passing to 2nd attack")
-		troops_placement()
+		troops_placement_second()
 		pyautogui.sleep(120)
 	second_attack()
 
@@ -90,7 +106,10 @@ while True:
 
 
 # Clicking on Bonus-stella
-	pyautogui.click(x=783, y=735)
+	def claim_stars_bonus():
+		pyautogui.sleep(3)
+		pyautogui.click(x=783, y=735)
+	claim_stars_bonus()
 
 	
 # Empty elixir attack storage
@@ -107,5 +126,8 @@ while True:
 		pyautogui.sleep(1)
 	empty_storage()
 
-# Wait 5.3 seconds before starting a new attack
-	pyautogui.sleep(4.3)
+# Wait 2.7 seconds before starting a new attack
+	pyautogui.sleep(2.7)
+
+# Print number of attacks
+	print(f" Starting attack number {counter}!")
